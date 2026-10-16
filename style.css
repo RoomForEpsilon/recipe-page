@@ -1,18 +1,251 @@
+/* Global defaults */
+
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+    --Young-serif: "Young Serif", serif;
+    --Outfit: Outfit, sans-serif;
+}
+
+/* Text presets */
+
+.text-preset-1 {
+    font-size: 2.5rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+    font-family: var(--Young-serif);
+    font-weight: 400;
+}
+
+.text-preset-2 {
+    font-size: 1.75rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+    font-family: var(--Young-serif);
+}
+
+.text-preset-3 {
+    font-size: 1.25rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+    font-family: var(--Outfit);
+    font-weight: 600;
+}
+
+.text-preset-4 {
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-family: var(--Outfit);
+}
+
+.text-preset-4-bold {
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-family: var(--Outfit);
+    font-weight: bold;
+}
+
+/* Page layout */
 
 body {
-
+    background-color: var(--Stone-100);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: var(--Stone-600);
 }
 
+article {
+    background-color: var(--White);
+}
 
+main {
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
 
+/* Banner image */
 
+.banner-image {
+    width: 100%;
+    height: auto;
+}
 
+/* Header section */
 
+.header-section {
+    padding-bottom: 2rem;
+}
 
+.header-section-title {
+    color: var(--Stone-900);
+}
 
+.header-section p {
+    padding-top: 1.5rem;
+}
 
-.attribution { font-size: 0.6875rem; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/* Preparation section */
+
+.prep-section {
+    padding: 1.5rem;
+    background-color: var(--Rose-50);
+}
+
+.prep-section-title {
+    padding-bottom: 1rem;
+    color: var(--Rose-800);
+}
+
+.prep-section ul {
+    padding-left: 1.5rem;
+    padding-right: 0;
+}
+
+.prep-section li {
+    padding: 0rem  1.5rem .5rem;
+}
+
+.prep-section li:last-child {
+    padding-bottom: 0;
+}
+
+.prep-section li::marker {
+    color: var(--Rose-800);
+}
+
+/* Ingredients section */
+
+.ingredients-section {
+    padding: 2rem 0;
+}
+
+.ingredients-section-title {
+    font-family: var(--Young-serif);
+    color: var(--Brown-800);
+    font-weight: normal;
+}
+
+.ingredients-section ul {
+    padding: 1.5rem  1.5rem;
+}
+
+.ingredients-section li {
+    padding: .5rem 0 0 1rem;
+}
+
+.ingredients-section li::marker {
+    color: var(--Brown-800);
+}
+
+/* Instructions section */
+
+.instructions-section {
+    padding: 2rem 0;
+}
+
+.instructions-section-title {
+    font-family: var(--Young-serif);
+    color: var(--Brown-800);
+    font-weight: normal;
+}
+
+.instructions-section ol {
+    padding: 1.5rem 0 0 1.5rem;
+}
+
+.instructions-section li {
+    padding: 0 0 1rem 1rem;
+}
+
+.instructions-section li::marker {
+    color: var(--Brown-800);
+}
+
+/* Nutrition section */
+
+.nutrition-section {
+    padding-top: 2rem;
+}
+
+.nutrition-section-title {
+    font-family: var(--Young-serif);
+    color: var(--Brown-800);
+    font-weight: normal;
+}
+
+.nutrition-section p {
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.nutrition-section table {
+    border-collapse: collapse;
+}
+
+.nutrition-section td {
+    color: var(--Brown-800);
+    border-bottom: 1px solid var(--Stone-150);
+    padding: 1rem 2rem;
+}
+
+.nutrition-section th {
+    border-bottom: 1px solid var(--Stone-150);
+    padding: 1rem 2rem;
+    font-weight: normal;
+}
+
+.nutrition-section tr:last-child td {
+    border-bottom: none;
+}
+
+.nutrition-section tr:last-child th {
+    border-bottom: none;
+}
+
+/* Shared separators */
+
+hr {
+    color: var(--Stone-150);
+}
+
+/* Footer */
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Mobile first pass */
+
+@media (max-width: 480px) {
+    
+    body {
+        background-color: var(--White);
+    }
+
+    .header-section-title {
+        font-size: 2.25rem;
+    }
+
+}
