@@ -40,6 +40,10 @@ I'm getting better with CSS and Figma. I'm beginning to see patterns in the desi
 
 This was my first time designing for mobile, tablet, and desktop. Once I finished the mobile layout, the tablet and desktop layouts quickly followed because there weren't many differences. Interestingly, I was able to catch some of my mistakes when I viewed the layout at larger screen sizes.
 
+I improved my understanding of the article tag.  Before this project, I thought an article could have a main tag inside of it; however, an article is supposed to be a self contained piece inside of the web page.  It doesn't make sense to have a main tag inside of an article.
+
+I also learned about aria elements.  I decided to put one on my nutrition table, because the design didn't include a caption to the table.  In some ways, I think I'm placating the AI suggestions.  I feel like the suggestion brought up a reasonable problem, but I feel like the reasonable solution, adding a table caption, is not in the design file.
+
 ### Continued development
 
 I still need to work on CSS. I think I'm ready for slightly more complex projects—but only slightly!
