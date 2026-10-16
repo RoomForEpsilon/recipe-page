@@ -65,16 +65,22 @@ body {
     background-color: var(--Stone-100);
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     color: var(--Stone-600);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 article {
     background-color: var(--White);
 }
 
-main {
+.recipe-content {
     padding: 2.5rem 2rem;
     display: flex;
     flex-direction: column;
@@ -131,17 +137,18 @@ main {
     color: var(--Rose-800);
 }
 
+/* Shared section headings */
+
+.section-title {
+    font-family: var(--Young-serif);
+    color: var(--Brown-800);
+    font-weight: normal;
+}
+
 /* Ingredients section */
 
 .ingredients-section {
     padding: 2rem 0;
-    /* outline: dashed red; */
-}
-
-.ingredients-section-title {
-    font-family: var(--Young-serif);
-    color: var(--Brown-800);
-    font-weight: normal;
 }
 
 .ingredients-section ul {
@@ -160,12 +167,6 @@ main {
 
 .instructions-section {
     padding: 2rem 0;
-}
-
-.instructions-section-title {
-    font-family: var(--Young-serif);
-    color: var(--Brown-800);
-    font-weight: normal;
 }
 
 .instructions-section ol {
@@ -188,12 +189,6 @@ main {
 
 .nutrition-section {
     padding-top: 2rem;
-}
-
-.nutrition-section-title {
-    font-family: var(--Young-serif);
-    color: var(--Brown-800);
-    font-weight: normal;
 }
 
 .nutrition-section p {
@@ -272,7 +267,7 @@ hr {
         margin: 8rem 0;
     }
 
-    main {
+    .recipe-content {
         padding: 2.5rem 0 0 0;
 
     }
