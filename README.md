@@ -42,7 +42,7 @@ This was my first time designing for mobile, tablet, and desktop. Once I finishe
 
 I improved my understanding of the article tag.  Before this project, I thought an article could have a main tag inside of it; however, an article is supposed to be a self contained piece inside of the web page.  It doesn't make sense to have a main tag inside of an article.
 
-I also learned about aria elements.  I decided to put one on my nutrition table, because the design didn't include a caption to the table.  In some ways, I think I'm placating the AI suggestions.  I feel like the suggestion brought up a reasonable problem, but I feel like the reasonable solution, adding a table caption, is not in the design file.
+I also learned about aria elements, specifically area-labelledby.  I decided to put one on my nutrition table, because the design didn't include a caption to the table.  In some ways, I think I'm placating the AI suggestions.  I feel like the suggestion brought up a reasonable problem, but I feel like the reasonable solution, adding a table caption, is not in the design file.
 
 ### Continued development
 

@@ -226,7 +226,8 @@ article {
 /* Shared separators */
 
 hr {
-    color: var(--Stone-150);
+    border: 0;
+    border-top: 1px solid var(--Stone-150);
 }
 
 /* Footer */
